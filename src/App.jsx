@@ -7,6 +7,7 @@ import Testimonials from "./testomonials/Testimonials"
 import ModalBox from "./modalboxperfect/modalbox"
 import { FaQ } from "react-icons/fa6"
 import FAQsection from "./FAQ/faq"
+import OurStory from "./OurStory/story"
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Testimonials />
       <ModalBox />
       <FAQsection/>
+      <OurStory />
     </div>
     
   
