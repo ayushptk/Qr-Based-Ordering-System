@@ -10,21 +10,21 @@ import FAQsection from "./FAQ/faq"
 import OurStory from "./OurStory/story"
 import Footer from "./footer/footer"
 import Loginpart from "./Login Page/Login"
-import HomeSection from "./Home"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
+function HomeSection() {
 
 
   return (
     <div >
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomeSection />} />
-          <Route path="/login" element={<Loginpart />} />
-        </Routes>
-      </Router>
-     
+      <Navbar />
+      <Herosection />
+      <Featuressection />
+      <OurServices />
+      <Testimonials />
+      <ModalBox />
+      <FAQsection/>
+      <OurStory />
+      <Footer />
    
     </div>
     
@@ -32,4 +32,4 @@ function App() {
   )
 }
 
-export default App
+export default HomeSection;

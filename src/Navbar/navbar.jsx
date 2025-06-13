@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
-
+import { Link, Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
+   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
+
+   const handleLoginClick = () => {
+    navigate('/login');
+    console.log('Login button clicked');
+  };
 
   return (
     <nav>
@@ -27,7 +34,7 @@ const Navbar = () => {
 
          
           <div className="hidden md:block">
-            <button className="bg-[#EB5600] text-white px-9 py-2 rounded-full hover:bg-orange-600 transition">
+            <button className="bg-[#EB5600] text-white px-9 py-2 rounded-full hover:bg-orange-600 transition" onClick={handleLoginClick}>
               Login
             </button>
           </div>
@@ -65,9 +72,10 @@ const Navbar = () => {
             <a href="#" className="block text-gray-700 hover:text-orange-500 font-medium px-3 py-2 rounded-md">About us</a>
             <a href="#" className="block text-gray-700 hover:text-orange-500 font-medium px-3 py-2 rounded-md">Pricing</a>
             <a href="#" className="block text-gray-700 hover:text-orange-500 font-medium px-3 py-2 rounded-md">Contact</a>
-            <button className="w-full bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition mt-2">
-              Login
+           
+            <button className="w-full bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition mt-2" onClick={handleLoginClick}>Login
             </button>
+            
           </div>
         </div>
       )}
