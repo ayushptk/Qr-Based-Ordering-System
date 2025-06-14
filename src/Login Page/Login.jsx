@@ -6,7 +6,7 @@ const Loginpart = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
-
+   
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
@@ -22,28 +22,30 @@ const Loginpart = () => {
 
   return (
     <div className="min-h-screen bg-orange-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg shadow-lg max-w-4xl w-full flex flex-col md:flex-row overflow-hidden">
+      <div className="bg-white rounded-lg shadow-lg max-w-3xl w-full flex flex-col md:flex-row overflow-hidden">
         {/* Left Panel */}
-        <div className="md:w-1/2 bg-orange-600 text-white flex flex-col items-center justify-center p-8 relative rounded-t-lg md:rounded-l-lg md:rounded-tr-none">
-          <div className="w-48 h-48 mb-6">
+          
+        <div className="md:w-[41%] text-white flex flex-col items-center justify-center p-8 relative rounded-t-lg md:rounded-l-lg md:rounded-tr-none">
+          {/* Larger half circle on the right side */}
+          <div className="hidden md:block absolute w-80 h-full bg-orange-500 rounded-r-full right-0 top-0"></div>
+          <div className="w-48 h-48 mb-6 relative z-10 flex items-center justify-center">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/4140/4140047.png"
+              src="./Images/welcomelogin.png"
               alt="Welcome Illustration"
               className="w-full h-full object-contain"
             />
           </div>
-          <h2 className="text-3xl font-bold mb-2">Welcome Back !</h2>
-          <p className="text-sm mb-6 text-center px-4">
+          <h2 className="text-3xl font-bold mb-2 relative z-10 text-center">Welcome Back !</h2>
+          <p className="text-sm mb-6 text-center px-4 relative z-10">
             Enter your personal details to use all of site this feature
           </p>
           <button
             onClick={handleSignUp}
-            className="border border-white rounded px-6 py-2 hover:bg-white hover:text-orange-600 transition"
+            className="border border-white rounded px-6 py-2 hover:bg-white hover:text-orange-600 transition relative z-10"
           >
             Sign Up
           </button>
-          {/* Decorative shape */}
-          <div className="hidden md:block absolute top-0 right-0 w-40 h-full bg-orange-500 rounded-l-full"></div>
+          {/* Decorative shape */}        
         </div>
 
         {/* Right Panel */}
