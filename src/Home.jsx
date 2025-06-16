@@ -1,15 +1,14 @@
-import Features from "./whyoursection/features"
-import Herosection from "./Herosection/herosection"
-import Navbar from "./Navbar/navbar"
-import Featuressection from "./whyoursection/features"
-import OurServices from "./OurServices/ourservices"
-import Testimonials from "./testomonials/Testimonials"
-import ModalBox from "./modalboxperfect/modalbox"
-import { FaQ } from "react-icons/fa6"
-import FAQsection from "./FAQ/faq"
-import OurStory from "./OurStory/story"
-import Footer from "./footer/footer"
-import Loginpart from "./Login Page/Login"
+import React from 'react'
+import Navbar from './Components/Pages/HomePage/Navbar/navbar'
+import Footer from './Components/Pages/HomePage/Footer/footer'
+
+import Herosection from './Components/Pages/HomePage/Herosection/herosection'
+import Featuressection from './Components/Pages/HomePage/whyoursection/features'
+import OurServices from './Components/Pages/HomePage/OurServices/ourservices'
+import Testimonials from './Components/Pages/HomePage/testomonials/Testimonials'
+import ModalBox from './Components/Pages/HomePage/modalboxperfect/modalbox'
+import FAQsection from './Components/Pages/HomePage/FAQ/faq'
+import OurStory from './Components/Pages/HomePage/OurStory/story'
 
 function HomeSection() {
 
@@ -24,7 +23,7 @@ function HomeSection() {
       <ModalBox />
       <FAQsection/>
       <OurStory />
-      <Footer />
+      <Footer/>
    
     </div>
     

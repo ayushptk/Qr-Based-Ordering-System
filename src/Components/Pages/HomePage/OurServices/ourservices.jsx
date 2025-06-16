@@ -1,6 +1,6 @@
 import React from 'react';
-import garlic from '../../public/Images/garlic.png';
-import leaf3 from '../../public/Images/leaf3.png';
+import garlic from '../Assests/garlic.png';
+import leaf3 from '../Assests/leaf3.png';
 import { LuSalad } from "react-icons/lu";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaCartShopping } from "react-icons/fa6";

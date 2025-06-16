@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../../public/Images/hero-image.jpg';
+ import heroImage from '../Assests/hero-image.jpg';
 import { IoFastFoodSharp } from "react-icons/io5";
 import { MdOutlineSlowMotionVideo } from "react-icons/md";
 const Herosection = () => {
