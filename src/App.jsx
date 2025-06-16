@@ -15,6 +15,7 @@ import Loginpart from "./Components/Pages/HomePage/Login Page/Login"; // Correct
 import AdminpanelApp from "./Components/Pages/AdminpanelPages/AdminpanelApp"; // Corrected import path
 import MenupageApp from "./Components/Pages/menupage/MenupageApp"; // Corrected import path
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import TableSection from "./Components/Pages/AdminpanelPages/Tables/table";
 
 function App() {
 
@@ -25,8 +26,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeSection />} />
           <Route path="/login" element={<Loginpart />} />
-          <Route path="/adminpanel/*" element={<AdminpanelApp />} />
+          <Route path="/adminpanel" element={<AdminpanelApp />} />
           <Route path="/menupage/*" element={<MenupageApp />} />
+          
         </Routes>
       </Router>
      

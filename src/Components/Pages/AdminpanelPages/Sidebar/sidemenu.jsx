@@ -15,23 +15,23 @@ const SideMenu = () => {
     { name: 'Dashboard',
        icon: <FaThLarge />, 
        badge: null, 
-       path: '/dashboard'
+       path: 'dashboard'
        },
 
 
-    { name: 'Orders', icon: <FaClipboardList />, badge: null, path: '/orders' },
-    { name: 'Notification', icon: <FaRegComments />, badge: null, path: '/notification' },
-    { name: 'Table', icon: <FaCalendarAlt />, badge: null, path: '/createtable' },
-    { name: 'Menu', icon: <FaBoxOpen />, badge: null, path: '/menu' },
-    { name: 'Inventory', icon: <FaBoxOpen />, badge: null, dropdown: true, path: '/inventory' },
-    { name: 'Reviews', icon: <FaStar />, badge: null, path: '/reviews' },
+    { name: 'Orders', icon: <FaClipboardList />, badge: null, path: 'orders' },
+    { name: 'Notification', icon: <FaRegComments />, badge: null, path: 'notification' },
+    { name: 'Table', icon: <FaCalendarAlt />, badge: null, path: 'createtable' },
+    { name: 'Menu', icon: <FaBoxOpen />, badge: null, path: 'menu' },
+    { name: 'Inventory', icon: <FaBoxOpen />, badge: null, dropdown: true, path: 'inventory' },
+    { name: 'Reviews', icon: <FaStar />, badge: null, path: 'reviews' },
   ];
 
   return (
     <div className="bg-white h-full w-64 flex flex-col p-4 shadow-sm">
       <div className="flex items-center space-x-2 mb-6">
         <img
-          src="/Images/Logo.png"
+          src="/Images/logo.png"
           alt="Logo"
           className="w-8 h-8"
         />

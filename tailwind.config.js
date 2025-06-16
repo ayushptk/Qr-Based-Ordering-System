@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         salsa: ['Salsa', 'cursive'],
+        barlow: ['Barlow', 'sans-serif'],
       },
     },
   },
