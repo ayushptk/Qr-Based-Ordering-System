@@ -16,6 +16,8 @@ import AdminpanelApp from "./Components/Pages/AdminpanelPages/AdminpanelApp"; //
 import MenupageApp from "./Components/Pages/menupage/MenupageApp"; // Corrected import path
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TableSection from "./Components/Pages/AdminpanelPages/Tables/table";
+import Cart from "./Components/Pages/menupage/CartPage/Cart";
+import ChosesDishes from "./Components/Pages/menupage/ChosesDishes/chosesDishes";
 
 function App() {
 
@@ -27,7 +29,9 @@ function App() {
           <Route path="/" element={<HomeSection />} />
           <Route path="/login" element={<Loginpart />} />
           <Route path="/adminpanel" element={<AdminpanelApp />} />
-          <Route path="/menupage/*" element={<MenupageApp />} />
+          <Route path="/menupage" element={<MenupageApp />} />
+          <Route path="/dishes" element={<ChosesDishes />} />
+          <Route path="/cart" element={<Cart />} />
           
         </Routes>
       </Router>

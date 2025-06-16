@@ -28,14 +28,6 @@ function MenupageApp() {
     <Provider store={store}>
       <Routes>
         <Route path="/" element={<MenuLayout />}>
-          {/* Default route for menu page, e.g., showing all dishes */}
-          {/* <Route index element={<Categories />} />
-          <Route index element={<ChosesDishes />} /> */}
-
-          <Route path="/cart" element={<Cart />} />
-          {/* Add other menu-related routes here, e.g., for specific categories or dish details */}
-          {/* <Route path="categories/:categoryId" element={<DishesSectionPage />} /> */}
-          {/* <Route path="choses-dishes" element={<ChosesDishes />} /> */}
         </Route>
       </Routes>
     </Provider>

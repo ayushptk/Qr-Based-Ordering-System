@@ -2,8 +2,11 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../store/cartSlice';
 import { useNavigate } from 'react-router-dom';
-import toast from 'react-hot-toast';
+//import toast from 'react-hot-toast';
 import { FaShoppingCart } from 'react-icons/fa';
+import { div } from 'framer-motion/client';
+import Header from '../Header/header';
+import BelowMenu from '../BelowDashboard/belowmenu';
 
 const dishes = [
   {
@@ -68,7 +71,11 @@ const ChosesDishes = () => {
   };
 
   return (
+    
+     <div>
+      
     <div className="max-w-[900px] mx-auto px-4 mt-6 bg-[#fff5f3] ">
+     <Header />
       <div className="w-full max-w-[900px]">
         <h2 className="text-gray-800 text-lg font-semibold mb-4">Choose Dishes</h2>
         <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -97,7 +104,9 @@ const ChosesDishes = () => {
           ))}
         </div>
       </div>
+      <BelowMenu />
       <div className="mt-6">..</div>
+    </div>
     </div>
   );
 };

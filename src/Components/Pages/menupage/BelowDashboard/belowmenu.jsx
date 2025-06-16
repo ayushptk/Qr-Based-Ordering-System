@@ -11,7 +11,7 @@ const BelowMenu = () => {
       <ul className="flex justify-between max-w-[900px] mx-auto py-2">
         {/* Home */}
         <li className="flex flex-col items-center text-gray-600 hover:text-gray-800 cursor-pointer">
-          <Link to="/" className="flex flex-col items-center">
+          <Link to="/menupage" className="flex flex-col items-center">
             <FaHome />
             <span className="text-sm">Home</span>
           </Link>
