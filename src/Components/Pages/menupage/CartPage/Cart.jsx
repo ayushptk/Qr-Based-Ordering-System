@@ -120,6 +120,7 @@ const Cart = () => {
       </main>
 
       <BelowMenu />
+      <div className='mb-10'>..</div>
     </div>
   )
 }

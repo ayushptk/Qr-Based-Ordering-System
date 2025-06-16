@@ -8,17 +8,16 @@ import Cart from './CartPage/Cart'; // Cart page
 import Categories from './Categories/categories';
 import ChosesDishes from './ChosesDishes/chosesDishes';
 import BelowMenu from './BelowDashboard/belowmenu';
+import { Toaster } from 'react-hot-toast';
 
 const MenuLayout = () => {
   return (
-    <div>
-      
+    <div className='bg-[#FFF5F3]'>
+      <Toaster />
       <Header />
       <Categories />
       <ChosesDishes />
       <BelowMenu />
-      
- 
     </div>
   );
 };

@@ -26,7 +26,7 @@ const categories = [
 
 const Categories = () => {
   return (
-    <section className="max-w-[900px] mx-auto px-4 mt-6 ">
+    <section className="max-w-[900px] mx-auto px-4 mt-6  bg-[#FFF5F3]">
       <h2 className="text-gray-600 font-medium mb-3">Categories</h2>
       <div className="flex space-x-4">
         {categories.map((category) => (
