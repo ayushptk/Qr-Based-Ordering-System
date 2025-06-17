@@ -12,6 +12,7 @@ import {
 import { FaChair } from "react-icons/fa";
 import { MdMenuBook } from "react-icons/md";
 import { IoMdSettings } from "react-icons/io";
+import { IoMdNotifications } from "react-icons/io";
 const SideMenu = () => {
   const menuItems = [
     { name: 'Dashboard',
@@ -22,7 +23,7 @@ const SideMenu = () => {
 
 
     { name: 'Orders', icon: <FaClipboardList />, badge: null, path: '/orders' },
-    { name: 'Notification', icon: <FaRegComments />, badge: null, path: '/notification' },
+    { name: 'Notification', icon: <IoMdNotifications />, badge: null, path: '/notification' },
     { name: 'Table', icon: <FaChair />, badge: null, path: '/createtable' },
     { name: 'Menu', icon: <MdMenuBook />, badge: null, path: '/menu' },
     { name: 'Inventory', icon: <FaBoxOpen />, badge: null, dropdown: true, path: '/inventory' },

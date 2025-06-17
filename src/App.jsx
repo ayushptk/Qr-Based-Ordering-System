@@ -8,6 +8,8 @@ import TableSection from "./Components/Pages/AdminpanelPages/Tables/table";
 import Cart from "./Components/Pages/menupage/CartPage/Cart";
 import ChosesDishes from "./Components/Pages/menupage/ChosesDishes/chosesDishes";
 import AdminDashboard from "./Components/Pages/AdminpanelPages/Dashboards/dashboard";
+import NotificationPart from "./Components/Pages/AdminpanelPages/Notifications/notification";
+import OrdersComponents from "./Components/Pages/AdminpanelPages/Orders/orderscomponents";
 
 function App() {
 
@@ -27,6 +29,17 @@ function App() {
           <Route path="/dashboard" element={
             <AdminLayout>
               <AdminDashboard />
+            </AdminLayout>
+          } />
+            <Route path="/notification" element={
+            <AdminLayout>
+          <NotificationPart />
+            </AdminLayout>
+          } />
+
+           <Route path="/orders" element={
+            <AdminLayout>
+          <OrdersComponents />
             </AdminLayout>
           } />
 
