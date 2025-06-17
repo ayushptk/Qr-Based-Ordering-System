@@ -16,7 +16,7 @@ const QrmenuSection = ({ onClose }) => {
         <div className="flex items-center space-x-4">
           <button
             type="button"
-            className="flex items-center text-gray-600 hover:text-gray-900 focus:outline-none"
+            className="flex items-center text-gray-600 hover:text-gray-900 focus:outline-none bg-gray-100 hover:bg-gray-200 rounded-lg px-3 py-2"
             aria-label="Edit"
           >
             <FiEdit className="w-5 h-5" />
@@ -49,9 +49,9 @@ const QrmenuSection = ({ onClose }) => {
             <p>-</p>
           </div>
           <div>
-            <p className="font-semibold text-gray-900">Table Status</p>
+            <p className="font-semibold text-green-900">Table Status</p>
             <p>
-              <span className="inline-block px-2 py-0.5 text-xs font-semibold rounded-full bg-blue-200 text-blue-700 select-none">
+              <span className="inline-block px-2 py-0.5 text-xs font-semibold rounded-full bg-green-200 text-green-700 select-none">
                 Open
               </span>
             </p>
@@ -84,7 +84,7 @@ const QrmenuSection = ({ onClose }) => {
             <input
               type="text"
               readOnly
-              value="https://rx_h6ga9mkz.restro.link/en/dine-..."
+              value="http://localhost:5173/menupage"
               className="flex-grow rounded-md border border-gray-300 px-3 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <button

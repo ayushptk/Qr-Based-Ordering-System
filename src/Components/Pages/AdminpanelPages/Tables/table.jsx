@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BsThreeDots } from "react-icons/bs";
 import QrmenuSection from './QrmenuSection';
-
+import { FaEdit } from "react-icons/fa";
 const tablesData = [
   { id: 1, name: 'Cabin 1', type: 'Cabin', capacity: 4, status: 'Open', available: true },
   { id: 2, name: 'Table 1', type: 'Table',  capacity: 4, status: 'Open', available: true },
@@ -131,7 +131,7 @@ const TableSection = () => {
                   <td className="px-6 py-3 border-b border-gray-200">{table.type}</td>
                   <td className="px-4 py-3 border-b border-gray-200 text-center">{table.capacity}</td>
                   <td className="px-4 py-3 border-b border-gray-200">
-                    <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-blue-200 text-blue-700 select-none">
+                    <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-green-200 text-green-700 select-none">
                       {table.status}
                     </span>
                   </td>
