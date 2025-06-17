@@ -9,22 +9,25 @@ import {
   FaStar,
   FaChevronDown,
 } from 'react-icons/fa';
-
+import { FaChair } from "react-icons/fa";
+import { MdMenuBook } from "react-icons/md";
+import { IoMdSettings } from "react-icons/io";
 const SideMenu = () => {
   const menuItems = [
     { name: 'Dashboard',
        icon: <FaThLarge />, 
        badge: null, 
-       path: 'dashboard'
+       path: '/dashboard'
        },
 
 
-    { name: 'Orders', icon: <FaClipboardList />, badge: null, path: 'orders' },
-    { name: 'Notification', icon: <FaRegComments />, badge: null, path: 'notification' },
-    { name: 'Table', icon: <FaCalendarAlt />, badge: null, path: 'createtable' },
-    { name: 'Menu', icon: <FaBoxOpen />, badge: null, path: 'menu' },
-    { name: 'Inventory', icon: <FaBoxOpen />, badge: null, dropdown: true, path: 'inventory' },
-    { name: 'Reviews', icon: <FaStar />, badge: null, path: 'reviews' },
+    { name: 'Orders', icon: <FaClipboardList />, badge: null, path: '/orders' },
+    { name: 'Notification', icon: <FaRegComments />, badge: null, path: '/notification' },
+    { name: 'Table', icon: <FaChair />, badge: null, path: '/createtable' },
+    { name: 'Menu', icon: <MdMenuBook />, badge: null, path: '/menu' },
+    { name: 'Inventory', icon: <FaBoxOpen />, badge: null, dropdown: true, path: '/inventory' },
+    { name: 'Reviews', icon: <FaStar />, badge: null, path: '/reviews' },
+    {name:'Setting',icon:<IoMdSettings />,badge:null,path:'/setting'},
   ];
 
   return (

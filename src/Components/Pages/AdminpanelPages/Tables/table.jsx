@@ -34,7 +34,7 @@ const TableSection = () => {
   return (
     <div className="relative flex">
       {/* Main Table Section */}
-      <div className={`p-4 overflow-x-auto ml-6 ms-[16rem] bg-white transition-all duration-300 ease-in-out ${isQrMenuOpen ? 'w-[calc(100%-20rem)]' : 'w-full'}`}>
+      <div className={`p-4 overflow-x-auto ml-6 mt-8 ms-[17rem] bg-white transition-all duration-300 ease-in-out ${isQrMenuOpen ? 'w-[calc(100%-20rem)]' : 'w-full'}`}>
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
           <h2 className="text-xl font-semibold text-gray-900 mb-3 md:mb-0">Tables</h2>
